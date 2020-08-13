@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+
+        for(i=1; i<=10; i++){
+            console.log(i)
+        }
+
+    var num=prompt('Enter a number?');
+    num=Number(num);
+    var numLength=prompt('Enter a length of multiplication table?');
+    numLength=Number(numLength);
+    document.write('<h1>Entered Table Number is:', +num, '</h1>');
+    document.write('<h2>Entered Length is:', +numLength, '</h2>');
+    for(i=1; i<=numLength; i++){
+        answer=num * i;
+        document.write( +num, '*' +i, '=', +answer, '</br>');
+    }
+    </script>
+</body>
+</html>

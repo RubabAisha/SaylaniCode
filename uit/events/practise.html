@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>practise</title>
+</head>
+<body>
+    
+    <a href="JavaScript:void(0)" onclick="popup('Working');">Click</a>
+
+    <img src="away.png" onMouseover="src='home.png'">
+
+    <h1 onClick="msg('Be sure to get your shopping done today.');">World Ends Tomorrow</h1>
+
+    <a href="#" onMouseover="this.style.color='green';">Home Page</a>
+
+    <img src="away.png" onMouseover="src='home.png'" onMouseout="src='away.png'">
+    
+    <script>
+        function popup(message) { 
+            alert(message); 
+            alert("testing");
+        }
+
+        function msg(text) { 
+            alert(text); 
+        }
+
+    </script>
+</body>
+</html>

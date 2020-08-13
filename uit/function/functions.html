@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+     function greeting(){
+      console.log('Hello Users');
+
+     }
+     greeting();
+
+     function Currentdate(){
+     var rightNow=new Date()
+      console.log(rightNow);
+
+     }
+     Currentdate();
+
+    //  function fullName(){
+    //  var firstName=prompt('Enter your first name:');
+    //  var lastName=prompt('Enter your last name')
+    //  var fullName=firstName+' '+lastName;
+    //  console.log('Hello\xa0'+fullName);
+    //  }
+    //  fullName();
+
+    //  function calculateValue(){
+    //  var firstNum=prompt('Enter your first num:');
+    //  var secNum=prompt('Enter your sec num:')
+    //  firstNum=Number(firstNum);
+    //  secNum=Number(secNum);
+    // //  console.log( firstNum+secNum);
+    //  return result=firstNum+secNum;
+    //  }
+    // var a =  calculateValue();
+    // console.log(a)
+
+// CALCULATOR
+    var firstNum=prompt('Enter your first num:');
+    // var secNum=prompt('Enter your sec num:');
+    // var operator=prompt('Enter your operator:');
+    firstNum=Number(firstNum);
+    // secNum=Number(secNum);
+
+//     function calculator(a,b,c,){
+//      var answer;
+//      if (c==='+'){
+//          answer=a+b;
+//          return answer;
+//      }
+//      else if (c==='-') {
+//          answer=a-b;
+//          return answer;
+//      }
+//      else if (c==='*') {
+//          answer=a*b;
+//          return answer;
+//      }
+//      else if (c==='/') {
+//          answer=a/b;
+//          return answer;
+//      }
+//      else{
+//          console.log('invalid operator');
+//      }
+     
+//      }
+
+//    var result=calculator(firstNum, secNum, operator)
+//     console.log(result)
+
+    function square(p){
+        answer=Math.pow(p, 2);
+        // answer=p*2;
+        return answer;
+    }
+
+    var power=square(firstNum)
+    console.log(power)
+    </script>
+
+</body>
+</html>

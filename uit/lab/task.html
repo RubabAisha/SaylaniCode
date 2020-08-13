@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>task</title>
+</head>
+<body>
+        <input type="text" id="search" placeholder="Search.."> <button onclick="mySearch()">Search</button>
+        
+        
+    
+        <script>
+        var list=["aa","bb","cc","dd","ee","ff","gg","hh","ii","jj"]; 
+        
+        function mySearch() {
+            // var test=document.getElementById("search").value = list.filter(checkSearch);
+            var test=document.getElementById("search").value;
+            console.log(test);
+            test.list.filter(checkSearch);
+            // document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+        }
+
+        function checkSearch(name) {
+            for(i=0; i<list.length; i++){
+            if (name===list[i])
+            console.log("match found");
+            else
+            console.log("not found");
+            return name;
+        }
+        }
+        </script>
+</body>
+</html>

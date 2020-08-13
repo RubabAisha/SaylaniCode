@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If Statement</title>
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </tr>
+        </thead>
+        <tbody>
+
+            </tbody>
+
+    </table>
+    <script>
+    var a=prompt("Enter your first subject:");
+    var b=prompt("Enter your second subject:");
+    var c=prompt("Enter your third subject:");
+    var total= 300;
+    var obtain_a=prompt("Enter your_"  +a+  "_subject marks?");
+    var obtain_b=prompt("Enter your_"  +b+  "_subject marks?");
+    var obtain_c=prompt("Enter your_"  +c+  "_subject marks?");
+    var per_a=(obtain_a*100)/total;
+    var per_b=(obtain_b*100)/total;
+    var per_c=(obtain_c*100)/total;
+    var total_marks=obtain_a+obtain_b+obtain_c;
+    var per=(total_marks*100)/300;
+    alert(per_a);
+    alert(per_b);
+    alert(per_c);
+    alert(per);
+    </script>
+</body>
+</html>

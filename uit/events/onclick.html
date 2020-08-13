@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+</head>
+<body>
+    <a href="JavaScript:void(0)" onClick="alert('Hi');">Click</a>
+
+    <a href="JavaScript:void(0)" onClick="var greet='Hello User'; alert(greet); alert('Aisha');">Click</a>
+    
+    <!-- //Function calling in events -->
+    <a href="JavaScript:void(0)" onclick="popup('hello Aisha');">Click</a>
+
+    <input type="button" value="Click Me" onClick="alert('Hello world!');">
+    
+    <img src="away.png" onClick="alert('Hello world!');">
+    
+    <!-- Trigger through function -->
+
+    <img src="away.png" onClick="greetTheUser();">
+    
+    <script>
+        function popup(message) { 
+            alert(message); 
+        }
+
+        function greetTheUser() { 
+            var a=prompt('Enter your name?');
+            alert('Hello User ' +a); 
+        }
+
+    </script>
+</body>
+</html>

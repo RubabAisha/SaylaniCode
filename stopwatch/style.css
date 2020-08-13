@@ -1,0 +1,31 @@
+* {
+    text-align: center;
+  }
+  body {
+    /* background:url(./images/watch.jpg) 50% 50%; */
+    background-size: contain;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #000;;
+  }
+
+  .stopwatch-container > div{
+      display: inline-block;
+      padding: 20px;
+  }
+  .stopwatch-container span{
+      display: block;
+  }
+
+  .todo-container{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .btn{
+     background: gray;
+     color:#fff;
+     padding:5px;
+  }

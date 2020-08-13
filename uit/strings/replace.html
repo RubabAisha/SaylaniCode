@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+       var text='Hyderabad';
+       var replaced_string=text.replace('Hyder','Islam');
+       alert('City:' +text+ '\n' +'After Replacement:' +replaced_string);
+
+    // Only replace first instance if string
+       var message = "Ali and Sami are best friends. They play cricket and football together."; 
+       var newmessage=message.replace('and','&');
+       alert('Hey:' +message+ '\n' +'After Replacement:' +newmessage);
+    
+    // Now this will replace string globally
+    var message2 = "Ali and Sami are best friends. They play cricket and football together."; 
+    var newmessage2=message2.replace(/and/g,'&');
+    alert('Hey:' +message2+ '\n' +'After Replacement:' +newmessage2);
+    </script>
+</body>
+</html>

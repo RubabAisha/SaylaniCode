@@ -1,0 +1,28 @@
+Assigning an empty array literal, as in var a = [], is the same as invoking the Array() constructor without arguments, as in var a = new Array().
+Assigning an empty object literal, as in var o = {}, is the same as invoking the Object() constructor without arguments, as in var o = new Object(). Notice, however, that an empty object literal {} is not really empty, as it contains properties and methods inherited from Object.prototype. So, a truly empty object has to be created with null as prototype, like in var o = Object.create( null).
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Note that write() does NOT add a new line after each statement:</p>
+
+<pre>
+<script>
+document.write("Hello World!");
+document.write("Have a nice day!");
+</script>
+</pre>
+
+<p>Note that writeln() add a new line after each statement:</p>
+
+<pre>
+<script>
+document.writeln("Hello World!");
+document.writeln("Have a nice day!");
+</script>
+</pre>
+
+</body>
+</html>

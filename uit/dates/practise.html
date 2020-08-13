@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+    var rightNow=new Date();
+    console.log(rightNow);
+    var currentHours=rightNow.getHours();
+    console.log(currentHours);
+    var hourlater=currentHours-1;
+    console.log(hourlater);
+    var hoursresult=new Date();
+    hoursresult=hoursresult.setHours(hourlater);
+    hoursresult=new Date(hoursresult);
+    console.log('current date:' +rightNow)
+    console.log('1 hour ago, it was:' +hoursresult)
+
+    var currentyear=rightNow.getYear();
+    console.log(currentyear);
+    var yearslater=currentyear-100;
+    console.log(yearslater);
+    var yearsresult=new Date();
+    yearsresult=yearsresult.setYear(yearslater);
+    yearsresult=new Date(yearsresult);
+    console.log('current date:' +rightNow)
+    console.log('100 years back, it was:' +yearsresult)
+
+    </script>
+    
+</body>
+</html>

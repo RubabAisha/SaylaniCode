@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+        var deserts=['cake', 'apple pie', 'cookie', 'chips', 'patties'];
+        var item=prompt('Welcome to ABC Bakery! What do you want to order Sir/Maam?');
+        item=item.toLowerCase()
+        var matchfound=false
+        for (i=0; i<deserts.length; i++)
+        {
+            if ( item===deserts[i]){
+                matchfound=true;
+                alert( 'Congratulations \xa0'+item+'\xa0'+'is available at index \xa0'+i+'\xa0'+'in our bakery');
+                break;
+            }
+
+        }
+        if (matchfound===false){
+            alert('We are sorry.'+'\xa0'+item+'\xa0'+'is not available in our bakery');
+        }
+        
+        
+    </script>
+</body>
+</html>

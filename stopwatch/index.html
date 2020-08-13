@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stopwatch-container">
+    <div id="mins">0
+        <span>Min</span>
+        <button>Start</button>
+    </div>
+    <div id="sec">0
+        <span>Sec</span>
+        <button>Stop</button>
+    </div>
+    <div id="milisec">0
+        <span>MiliSeconds</span>
+        <button>Reset</button>
+    </div>
+    
+</div>
+    
+<!-- TODO APP -->
+<div class="todo-container">
+    <input placeholder="Enter Todo" type="text" id="todo-item"/>
+    <button onclick="addTodo()">Add Item</button>
+    <button onclick="deleteAll()">Delete All</button>
+
+
+<div>
+    <ul id="list">
+        
+    </ul>
+</div>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+<body>
+    
+    <script>
+
+    //  var color_name=["red", "yellow" , "blue"];
+
+    //  var a = 40 ;
+    // if ( a > 40 && a < 45 ){
+    //     alert( "a is greater than 40 and less than 45" );
+    // }
+
+//     var a = 10, b = 12, c = 0;
+// 	// // i) a != 6 && b > 5;
+//      if ( a != 6 && b > 5 ){
+//       alert( "1 chal gaya" );
+//       }
+
+// 	// // ii) ! ( a < 10 );
+//     if ( ! ( a < 10 ) ){
+//      alert( "2 chal gaya" );
+//       }
+
+// 	// // iii) !c;
+//     if ( !c ){
+//      alert( "3 chal gaya" );
+//      }
+
+// 	// // iv) !( a > 5 && c );
+//     if ( !( a > 5 && c ) ){
+//      alert( "4 chal gaya" );
+//     } 
+
+//     var a = 40 ;
+//         if ( a > 40 && a < 45 ){
+//             alert( "a is greater than 40 and less than 45" );
+//         }
+
+//         var i = -3, j = 3 ;
+//     if ( !i + !j * 1 ){
+//         console.log( "correct" );
+//     }else{
+//         console.log( "not corr  ect" );
+//     }
+
+//     // var arr = [1,2,3,4,5];
+//     // console.log(arr.length);
+
+//Array ki lenght return krey ga tau obviously update krney k bd hi krey ga
+//    var arr = [1,2,3,4,5];//103254
+//    var arr2 = arr;
+//    arr.push(6,7,8,9);
+//    arr2.push(10,11,12,13);
+//    console.log(arr);//1,...,9
+//    console.log(arr2);//1,...,5 10,...13,
+
+//    var arr = [1,2,3,4,5];//12036
+//    var arr2 = arr.slice(0);
+//    arr.push(6,7,8,9);
+//    arr2.push(10,11,12,13);
+//    console.log(arr);
+//    console.log(arr2);
+
+//    var arr = [1,2,3];
+//    arr[5] = 10;
+//    arr.push(4,5);
+//    arr[8] = [];
+//    arr[8].push(10);
+//    alert(arr);
+
+var arr = [1,2,3];
+ arr.push(arr.splice(1,1).pop());
+ alert(arr);
+
+  
+    </script>
+</body>
+</html>

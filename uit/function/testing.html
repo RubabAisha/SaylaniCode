@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var rightNow=new Date();
+    // var theDays=['Sun', 'Mon','Tues','Wed','Thu','Fri','Sat'];
+    // var days=rightNow.getDay();
+    // var hour=rightNow.getHours();
+    // var year=rightNow.getFullYear();
+    // alert('Today is '+theDays[days]);
+    // alert(hour);
+    // alert(year);
+
+    // var a=6;
+    // var calc=function(){
+    //     var a=5;
+    //     alert(a);
+    // }
+
+    // calc();
+
+    // var calc2=function calculate(){
+    //     var a=7;
+    //     alert(a);
+    // }
+
+    // calc2();
+    
+    // var a=6;
+    // function calculateValue(){
+    //     var a=5;
+    //     alert(a);
+    // }
+
+    // calculateValue();
+    // alert(a);
+
+    var rightNow=new Date();
+    var dateString=rightNow.toString();
+    // alert(dateString);
+    // alert(dateString.indexOf('2'));
+
+    var a="Hello World";
+    // alert(a.indexOf('l'));
+    var b=rightNow.getDay();
+    // alert(b);
+
+     var theDays=['Sun', 'Mon','Tues','Wed','Thu','Fri','Sat'];
+    //  alert(theDays[4]);
+
+     var date=rightNow.getDate();
+    //  alert(date);
+     
+     var time=rightNow.getTime();
+    //  alert(time);
+     //var result=Math.floor(time/(1000*60*60*24));
+    //  var result=time/(1000*60*60*24);
+    //  result=parseInt(result)
+    //  alert(result);
+
+    var otherDay=new Date("Dec 18, 2017 19:00:00");
+    var msdiff=otherDay.getTime()-rightNow.getTime();
+    var diffIndays=msdiff/(1000*60*60*24);
+    // diffIndays=parseInt(diffIndays);
+    alert(diffIndays);
+
+    var answer=rightNow.getFullYear(2025);
+    alert(answer);
+
+    var e = new Date(); 
+    e.setMonth(10);
+    alert(e);
+ 
+    var d = new Date();
+    d.setFullYear(1994);
+     alert(d);
+
+     var myFractional = parseInt("1.9999");
+     alert(myFractional);
+
+     var numberAsNumber = 1234; 
+     var numberAsString = numberAsNumber.toString();
+     alert(numberAsString);
+
+     var fixedValue = 10.59675;
+     fixedValue=fixedValue.toFixed(2);
+     alert('Fixed value aye gi'+fixedValue);
+    
+ 
+    </script>
+
+   
+</body>
+</html>

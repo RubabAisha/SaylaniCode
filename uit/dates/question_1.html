@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+    var rightNow=new Date();
+    console.log(rightNow);
+
+    var month=['January', 'February','March','April','May','June','July','August','September','October','November','December']
+    currentmonth=rightNow.getMonth();
+    console.log('Current month:'+month[currentmonth])
+
+    var days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    var currentday=rightNow.getDay();
+    console.log('Today is ' +days[currentday])
+     if (currentday===0 || currentday===6){
+         console.log('Its fun Day')  
+           }
+     else{
+         console.log('Wait for the Fun day')
+     }
+
+    var currentmonthdate=rightNow.getDate();
+    if (currentmonthdate < 16){
+        console.log('First Fifteen Days of the month')
+    }
+     else{
+         console.log('Last days of the month')
+     }
+    
+     var currentmiliseconds=rightNow.getTime();
+     console.log('Current Date:' +rightNow);
+     console.log('Elapsed miliseconds since January 1, 1970: ' +currentmiliseconds);
+     console.log('Elapsed minutes since January 1, 1970: ' +currentmiliseconds/(1000*60));
+
+     var currenthour=rightNow.getHours();
+     if (currenthour < 12){
+         console.log('Its AM')
+     }
+     else{
+         console.log('Its PM')
+     }
+
+     var laterdate= new Date('Dec 31, 2020');
+     console.log('later date hai:'+laterdate);
+
+     var laterdate2= new Date('Dec 16, 2020');
+     console.log('later date hai:'+laterdate2);
+
+     var lastramzandate=new Date('June 18, 2015');
+     console.log(lastramzandate);
+     var msDiff=rightNow.getTime()-lastramzandate.getTime();
+     var diffinDays=msDiff/(1000*60*60*24);
+     diffinDays=parseInt(diffinDays)
+     console.log(+diffinDays+'Days has passed since 1st Ramzan 2015')
+
+     var refdate=new Date('Dec 5, 2015');
+     var otherdate=new Date('Jan 1, 2015');
+     var elapsedsec=refdate.getTime()-otherdate.getTime();
+     var resultinsec=elapsedsec/(1000);
+     var resultinmin=elapsedsec/(1000*60);
+     console.log('On reference date' +refdate+',' +resultinsec+ ' sceonds had passed since begining of 2015')
+     console.log('On reference date' +refdate+',' +resultinmin+ ' minutes had passed since begining of 2015')
+ 
+     a=rightNow.getHours()-1;
+     result=new Date();
+     result=result.setHours(a)
+     result=new Date(result);
+     console.log(result)
+
+    </script>
+
+</body>
+</html>

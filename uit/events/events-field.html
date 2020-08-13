@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fields</title>
+</head>
+<body>
+    Email:<br> <input type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onBlur="this.style.backgroundColor='white';">   
+    <br>
+    Password:<br> <input type="password" size="30" onFocus="this.style.backgroundColor='yellow';" >    
+    <br>
+    Email:<br> <input type="text" size="30" id="email" onFocus="makeFieldYellow();" onBlur="makeFieldWhite();">
+    
+    <script>
+        function makeFieldYellow(){
+        var a=document.getElementById('email');
+        a.style.backgroundColor='yellow';
+        }
+
+        function makeFieldWhite(){
+        var a=document.getElementById('email');
+        a.style.backgroundColor='red';
+        }
+    </script>
+</body>
+</html>

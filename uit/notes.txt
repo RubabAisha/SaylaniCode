@@ -1,0 +1,22 @@
+if (1) 
+ console.log("If is true");
+console.log("This is a new statement and not part of the if");
+
+//Difference between two
+if (1) {
+    console.log("If is true");
+    console.log("This is in the block so is part of the if");
+}
+
+The bracket after allows multiple statements to be executed as part of the 'if'. Without the bracket after the 'if', only the first statement after it is included as part of the 'if'.
+
+In this line bracket decide the boundary of If() condition and more than one line of code in if() condition then it want bracket
+ if (numSheep > 10000) {
+         numSheep / 2;
+         console.log("Removing " + numSheep + " sheep from the population.");
+    }
+if you only have single line on code then you don't want bracket after if() condition
+like that
+
+if (numSheep > 10000) 
+         numSheep / 2;
