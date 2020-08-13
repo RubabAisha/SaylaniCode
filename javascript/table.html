@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sub1=prompt("Subject 1:" ,sub1);
+        var sub2=prompt("Subject 2:" ,sub2);
+        var sub3=prompt("Subject 3:" ,sub3);
+        var totalmarks=100;
+        var ob1=prompt("Obtained marks for subject1:" , ob1);
+        var ob2=prompt("Obtained marks for subject2:" , ob2);
+        var ob3=prompt("Obtained marks for subject3:" , ob3);
+        var total=totalmarks+totalmarks+totalmarks;
+        ob1=Number(ob1);
+        ob2=Number(ob2);
+        ob3=Number(ob3);
+        var Obtained=ob1+ob2+ob3;
+        var Percentage=Obtained / 300 * 100;
+        document.write("<table><tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th></tr><tr><td>" + sub1+"</td><td>"+totalmarks+"</td><td>"+ob1+"</td><td>"+ob1+"%</td></tr><tr><td>" +sub2+"</td><td>"+totalmarks+"</td><td>"+ob2+"</td><td>"+ob2+"%</td></tr><tr><td>"+sub3+"</td><td>"+totalmarks+"</td><td>"+ob3+"</td><td>"+ob3+"%</td></tr><tr><td></td><td>"+total+"</td><td>"+Obtained+"</td><td>"+Percentage+"%</td></tr>");
+
+</script>
+</body>
+</html>

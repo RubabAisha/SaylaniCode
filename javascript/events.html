@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- <a href="#" onclick="alert('Hello World');alert('Hello Duniya')">Click Me</a><br>
+    <a href="#" onclick="var a='user'; alert('hello ' +a)">Click Me</a><br>
+    <a href="#" onclick="foo()">Click Me</a><br>
+    <a href="#" onclick="koo('Hello Sylani')">Click Me</a> -->
+
+<!-- <button onclick="clickBtn()">Click</button> -->
+
+<!-- <img onmouseover="console.log('Over')" onmouseout="console.log('Out')" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAUgMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAgMEBQYHAQj/xAA1EAACAQMCAwUGBgEFAAAAAAABAgMABBEFIQYSMRMiQVGRFFJhcYGhBzJCscHRYhUjU3Lh/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgMAAQQFBv/EACYRAAMAAgEDBAEFAAAAAAAAAAABAgMRIQQSMQUTIkEyI1FhcfD/2gAMAwEAAhEDEQA/ANoAzRwKCjFdqEBQroFGwKhBC5lEFvJK3RFJot1N2PZKDhpJVQfufsDVe/EHVHs9DuYrSQrdGIuCOq48fUiqT+HXFUlxbraanI880eoC5SQnOVfKv6M+fr8KS8i5S+hk43UOl9GvVyjYrhGKcLCMKIRStEYVCCfLXKPQqEFQKMFoKKPUIcxSV3MLa3eVuijNLVA8ZazZaPos0t7LyMwxEo3Z2G4AFDW+16CiKulMrbZSOJZ4pGnBkEjuD2hz036D5b/WqFwsstjrSRZBVonLj3SMgeuAajb7iG/M7Mr5RjvzjJI+NPuE7mXVeIIbWGIe1XY7JW5tlwMk+i/asERc938nSXS5cE2q8aPRWlXYvrCC5A2kX7+P3p2RTbTbRLCxgtIzlYkC5PifE/WnVdCd6WzlhCMUUilDRCKsgTloUahUIcE8YnEGe+UL4+AIH80jqmpWulWMt7fSCKCIZZsZ9AOpqi8d65Npesw3GlShJbeA+0d3mBDHbI8+786guMOKJ9Y4V9lvI1SYSJIHi/JKP465+NIWdbaY/p8Sy5Zh+GyZ1P8AFuxibl06xln/AMpX5B6DNZtxJxHLxJqftF0j87dyONX7qDyG1QUrb0NNkDXEsn/Ehwfidv7qOmz1eHpcHT0vbXL42OZBGjckUSPjbLLzE/Gk7e5McgkgCQMv5ZYu6wPwIpTRMTaqXlcpHCM9fzMfD70hdlrZkihz2Xg+PzVWhzyJ864LzwHxxdaJeCDUbh7nTZD3+YlmhPvDO+PMfX57fa3EN1BHcW8iSwyKGR0OQwPQg15VhZ+dXjjLLjLYHT0q76B+IupcO2cFssMV1YrnlSTIZcnOAw+vUUya15OX1/p6zfq4fP2bzRWrPtH/ABa0S9KpfRT2TnxI7RPUb/arxZXttqFrHdWcyzQSDKOp2PhRpp+Dg5eny4fznQtQoUKsSZNxBcBpL2Vxl5riRsePKuAB+/rVDvbpU0uOENkQSGEn/H8y/Y4+lXninS7tWkuLWIyw5ZyF6rnrt88n61mtzC08/s3NyieRFBxnfOP5rmpNW1Q3FkcXtf7Qk8giKyMvMsbgsvmPGpK7is2he4010YyqC8a9ds74+u9DijSjo2sXNgSzIuOR3xl0I67VBacTFMd8MpxmtSfB65ZN3NLwxaxumQNyoneJzkU7W8j5SkkPdPUK233oskSSNzABJD4+B+f90zlLRtyyDBqDE6xzpkik9vZR9rCXUL3gPjSMN6cggdxuqNvkeR86ipJefEYPXrUjbqtuFnuNgo7qeLGoBGXur4+EOryCKExSxIY2kBJTOQPLFbpwPcpBwlpMeRn2ZWP13/mvP8ly9wWlc7n7Vt2jj2fS7OLpyQIvooopejnes0vbhLxst3ty+9Xarna/GhTNnn9CVu73Dcsa58/Kq5qPDNpZ8RaddbdjJMCY/AMOmPrirLp15E1siw8obG/nTDiRyI7GXO63kf3NZ+o/Ha8oCmVj8TLayle3mW7RL1UKmFgSXTqOnTfPXzrM5CY5Ofp4GtK4+0GZ7n/UrVHk5wFmRRkjA2IHlj9qo8dvFIGSRQx8Qeooj03Q6yYJma20NUugw6112E6dm6nH6W92nUlgUj/2eUL8aYzQSD8sq+lQ3W6U9toVtbS3tyWlm55D4gdPlTsSaSwYTSntMZVm72T5YqDkhkOxkNIrC6NuB86syvqOyeyY0iaQR3E8cUCYV2CfPJxWzrNygKvgKxDTpZYJo5UbldGDKR5itJ4f4ggv+WKZliufdJ2f5f1Q7MXqWLLkxzcLaXksvbNQrnL865V8nA7iNtbSYtzMzL8tqW1dJPYIwZGYrPGRv0wakmxjvAimssMNwY0n3iEquwzjIXJx9qz5abTKdumIawZ4tNluJ5pAmDygtjP91U9Iu7TVdEWeeziaaFREEK/mY7Biev8A7UvxRqHtUrkHIwpx7q8wwv23qp6J2lrq15ZgkI8jAAe624/egT9xN7GzvTafKJfW+H1msbZtGnxKgImhkb8581P0OxqNPA2rSaYbqOaJrnqLUjDEf9s4z8PvVmsVCzl3OOTOKTudUZ5yYndQNu6SKf7iVaZpfX50knZl80dzBM0VxGYpEOGVwQR9K7Csk7ckSNK3uxoWP2rR7js7wg3MazEDAMihiPWihQi8sfdHujYUSuX9j59SX0uf7KZb6Jq0jhVsZE+MpCfvUzY8I3bkNe3kcKj9MWWb1OAPvU12zx7Gu+2PR6RV+odRXCeiWhCxRJGLm5YIoXmaYknHnQqG9rk86FXoxbr9xz/rMz45wPmKcjVFkgYb9qneXY4JHhiq6r0+0yZI7kFmcbbBMb0nLily9cAOEMb+eUmZ3yTO3ODnwqS0LRJEvjqd6OSPkBjTxY8oGT5CiSJEtlCJY1M3ef5czbD0p/YX5REiumJXwzWbGn27BlPQhcJO8j4VgpO1JdiIsLjvGrFK0MiDl9aj5beNjzZ7wonLEUuRngRqB+o0mUJOB9adtboTzZrhiH6TVqStDOTCjB3ppNtuKkzaBvGms9p2alidqZFNDItpjDtKFFPJnqK7Tu9GnYjzYNPtPdHjkTsgXIwHJ6ZpvcgcnQUfT9oLgjqENBlr4MCn8RcOJZWlyOQHb5DYUhLL2j58B0rjbW4xSIqYpSQU+B/FqE8QChsgUsupnOWHpUZRTTHKZHMslDqSDpminVIx51Ev1pM9arsRXtSTTaycdxPWmFxeyzHvnbypsOlFfpSa8g9qT4D89Cm+T50KoLZ//9k="/> -->
+
+<input type="text" onfocus="console.log('focus')"/><br>
+Email:<br>
+<input id="name" type="text" size="30" onFocus="this.style.backgroundColor='yellow';" onBlur="this.style.backgroundColor='white';">
+<button onclick="getName()">Click</button>
+<br>
+
+</body>
+<script src="script.js"></script>
+</html>
